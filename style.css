@@ -1,0 +1,651 @@
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background: #ededed;
+}
+
+
+
+/* GENERALES */
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: inherit;
+}
+
+h2 {
+	font-family: 'Roboto', sans-serif;
+	color: #f15924;
+	font-size: 50px;
+	font-weight: bold;
+
+}
+
+h3 {
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	font-weight: lighter;
+}
+
+p {
+	font-family: 'Roboto';
+	font-size: 32px;
+	color: #006837;
+}
+
+.boton {
+	background: #00afef;
+	width: 200px;
+	height: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+.boton:hover {
+		background: #f15924;
+		transition: 1s;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* Contenedor Principal*/
+
+.container {
+	width: 90%;
+	background: #fff;
+	margin: 0;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2%;
+	height: 100%;
+	-webkit-box-shadow: -3px 4px 45px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: -3px 4px 45px -4px rgba(0,0,0,0.75);
+	box-shadow: -3px 4px 45px -4px rgba(0,0,0,0.75);
+	font-size: 0;
+	display: inline-block;
+	position: relative;
+}
+
+/* MAIN */
+
+.container .main img {
+	width: 100%;
+	height: 100%;
+}
+
+.main {
+	width: 100%;
+}
+
+/* Sobre nosotros*/
+
+.about {
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 100%;
+}
+
+@media only screen and (min-width: 800px){ 
+	.about {
+	display: grid;
+	grid-template-columns: 1fr  1fr;
+}
+}
+
+.sobre_nosotros {
+
+	margin: 10% 10% 10% 10%;
+	text-align: center;
+}
+
+.sobre_nosotros h2 {
+	font-size: 30px;
+	margin-top: 20%;
+} 
+
+@media only screen and (min-width: 1000px){
+	.sobre_nosotros h2 {
+	font-size: 40px;
+} 
+
+}
+
+.sobre_nosotros p {
+	font-size: 16px;
+}
+
+@media only screen and (min-width: 1000px){ 
+	.sobre_nosotros p {
+	font-size: 20px;
+}
+}
+
+@media only screen and (min-width: 1250px){ 
+	.sobre_nosotros p {
+	font-size: 24px;
+}
+
+}
+
+/* CUALIDADES*/
+
+.cualidades {
+
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 100%;
+}
+
+.cualidades .mock1 img {
+
+	width: 100%;
+	bottom: 0;
+	right: 0;
+	position: relative;
+}
+
+@media only screen and (min-width: 1250px){ 
+	.cualidades {
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+}
+
+.cualidades .mock1 img {
+	position: absolute;
+}
+
+}
+
+.cualidades-momo {
+	text-align: center;
+}
+
+.cualidades-momo h2 {
+	font-size: 30px;
+}
+
+@media only screen and (min-width: 1250px){  
+	.cualidades-momo h2 {
+	font-size: 40px;
+}
+}
+
+
+	/* Posicionar un div a la derecha abajo de otro div*/
+.mock1 {
+	position: relative;
+}
+
+
+.servicios {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 50px;
+}
+
+@media only screen and (min-width: 800px){ 
+
+	.servicios {
+	grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+ }
+
+@media only screen and (min-width: 1250px){ 
+	.servicios {
+	grid-template-columns: 1fr 1fr;
+}
+
+}
+
+
+
+.servicios img {
+
+	width: 100px;
+}
+
+.servicios img:hover {
+		-webkit-animation: swing 1s;
+    animation: swing 1s;
+}
+.servicios p {
+	font-size: 22px;
+}
+
+
+
+/* MAPA */
+
+.mapa {
+	text-align: center;
+	background-image: url("img/mapa.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 1080px;
+	position: relative;
+}
+
+.mapa h2 {
+	margin-bottom: 100px;
+}
+
+.mapa .destinos {
+	background: #006837;
+	color: #fff;
+	width: 100%;
+	font-size: 40px;
+	height: 50px;
+}
+
+.mapa .destinos:hover {
+	background: #f15924;
+	color: #fff;
+	transition: all .3s ease;
+}
+
+@media only screen and (min-width: 1250px){ 
+	.mapa .destinos {
+	background: #006837;
+	color: #fff;
+	width: 100%;
+	font-size: 50px;
+	height: 80px;
+}
+
+ }
+
+.destinos-mapa .destiny img {
+	display: none;
+}
+
+@media only screen and (min-width: 1000px){ 
+	.destinos-mapa .destiny img {
+	display: block;
+
+ }
+}
+
+
+
+.destinos-mapa {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.destinos-mapa .destiny {
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	justify-self: center;
+
+}
+
+
+
+/* RUTAS */
+
+.rutas {
+	text-align: center;
+}
+
+.ruta {
+	width: 80%;
+	height: 13rem;
+	background: #fff;
+	text-align: center;
+	-webkit-box-shadow: -29px 21px 51px -1px rgba(0,0,0,0.31);
+	-moz-box-shadow: -29px 21px 51px -1px rgba(0,0,0,0.31);
+	box-shadow: -29px 21px 51px -1px rgba(0,0,0,0.31);
+	overflow: hidden;
+	border-radius: 0px 0px 15px 15px;
+
+}
+
+.ruta h2 {
+	background: #f15924;
+	color: #fff;
+	font-size: 25px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+ .ruta p {
+	font-size: 18px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+.rutas_grid {
+	width: 80%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.rutas_grid .rutas_momo .ruta {
+	align-items: center;
+	justify-self: center;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+.rutas_momo {
+}
+
+/* Likes Momo*/
+
+.likes-momo {
+	display: grid;
+	grid-template-columns: 1fr;
+	height: auto;
+}
+
+@media only screen and (min-width: 1250px){
+	
+		.likes-momo {
+			grid-template-columns: 1fr 1fr;
+
+		}
+}
+
+.fanpage {
+	justify-content: center;
+	justify-self: center;
+	text-align: center;
+}
+
+		/*Centrando la img dentro del div*/
+.fanpage img {
+	width: 130px;
+	display: block;
+	margin: auto;
+	padding-top: 30%;
+}
+
+.fanpage h3 {
+	font-weight: bold;
+	color: #4267b2;
+	font-size: 30px;
+}
+
+@media only screen and (min-width: 800px){
+	.fanpage h3 {
+	font-weight: bold;
+	color: #4267b2;
+	font-size: 40px;
+}
+
+}
+
+
+
+.fanpage a {
+	text-decoration: none;
+}
+
+.fanpage h3:hover {
+	-webkit-animation: pulse 1s;
+    animation: pulse 1s;
+}
+
+.mock2 img {
+	width: 100%;
+	bottom: 0;
+	right: 0;
+}
+
+/* Sponsors*/
+
+.logos {
+	text-align: center;
+}
+
+.sponsor p {
+	font-size: 15px;
+	padding: 5% 20% 5% 20%;
+	text-align: center; 
+}
+
+.sponsor p:hover {
+	-webkit-animation: pulse 1s;
+    animation: pulse 1s;
+}
+
+@media only screen and (min-width: 1000px){ 
+	.sponsor p {
+	font-size: 20px;
+}
+
+}
+
+@media only screen and (min-width: 1250px){ 
+	.sponsor p {
+	font-size: 25px;
+}
+
+}
+
+
+.sponsor p a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.logos img {
+	display: block;
+	padding: 20px;
+	margin: auto;
+	opacity: 0.5;
+	width: 300px;
+	height: 100%;
+	margin-bottom: 50px;
+
+}
+
+.logos img:hover {
+	opacity: 1;
+}
+
+.ftz img {
+	width: 200px;
+}
+
+/* Footer */
+footer .copyright p {
+	color: #aeaeae;
+	text-align: center;
+	font-size: 15px;
+}
+
+
+@media only screen and (min-width: 1000px){
+	footer .copyright p {
+	font-size: 20px;
+}
+}
+		/*Centrando dos divs en un div*/
+.logos_footer {
+	text-align: center;
+}
+
+.logos_footer img {
+	display: block;
+	margin: auto;
+	padding: 30px;
+	width: 120px;
+	height: 120px;
+}
+
+.logos_footer img:hover {
+	-webkit-animation: bounce 1.5s;
+    animation: bounce 1.5s;
+}
+
+@media only screen and (min-width: 500px){
+	.logos_footer img {
+		display: inline-block;
+		padding: 40px;
+}
+}
+
+@media only screen and (min-width: 800px){
+	.logos_footer img {
+	width: 140px;
+	height: 140px;
+}
+
+}
+
+
+
+
+
+/* MEDIA QUERYS*/
+
+@media only screen and (min-width: 1250px){
+	.ruta p {
+	font-size: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+ }
+
+@media only screen and (min-width: 1000px){
+	.ruta h2 {
+	font-size: 30px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+}
+
+@media only screen and (min-width: 800px){
+	.ruta p {
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+
+	}
+
+@media only screen and (min-width: 768px){
+	.rutas_grid {
+	width: 80%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.logos img {
+	display: inline-block;
+	}
+
+
+
+}
+
+
+/* CALENDARIO */
+
+.mes {
+	height: 100%;
+	text-align: center;
+	justify-content: center;
+}
+
+.mes .titulo_mes h2 {
+	font-size: 80px;
+}
+
+.mes .semanas {
+
+	width: 80%;
+	height: 100%;
+	background: #7db2a0;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.mes .semanas .dia {
+
+	width: 95%;
+	height: 95%;
+	background-color: #fff;
+	margin: auto;
+	padding: 8px 5px 8px 5px;
+}
+
+.mes .dias {
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	background-color: #006a44;
+	margin-bottom: 20px;
+}
+
+.mes .dias h2 {
+	display: inline-block;
+	color: #fff;
+	font-size: 60px;
+	text-transform: lowercase;
+}
+
+.dia .numero_dia p {
+	color: orange;
+	text-align: left;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 0;
+	margin-top: 0;
+	left: 0;
+}
+
+.dia .evento .nombre_evento p {
+	font-size: 12px;
+}
+
+.dia .evento .lugar_evento p {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.dia .evento .hora_evento p {
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+.dia .dia_desactivado p {
+	color: #dcdadb;
+}
