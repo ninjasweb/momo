@@ -299,8 +299,14 @@ img {
 
 .destinos-mapa {
 	display: grid;
+	grid-template-columns: 1fr;
+}
+@media only screen and (min-width: 600px){
+	.destinos-mapa {
+	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
+ }
 
 .destinos-mapa .destiny {
 	text-align: center;
