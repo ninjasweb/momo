@@ -484,6 +484,22 @@ img {
 	opacity: 1;
 }
 
+.sponsor .logos_alcaldias {
+	text-align: center;
+}
+
+.sponsor .logos_alcaldias img {
+	width: 120px;
+	display: inline-block;
+	margin: 0;
+	margin: 0 20px;
+	opacity: 0.5;
+}
+
+.sponsor .logos_alcaldias img:hover {
+	opacity: 1;
+}
+
 .ftz img {
 	width: 200px;
 }
