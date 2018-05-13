@@ -484,15 +484,38 @@ img {
 	opacity: 1;
 }
 
+	/* Logos Alcaldía*/
+
 .sponsor .logos_alcaldias {
 	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 0 150px;
+}
+
+@media only screen and (min-width: 500px){
+	.sponsor .logos_alcaldias {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+ }
+
+@media only screen and (min-width: 800px){ 
+	.sponsor .logos_alcaldias {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+}
+
+.sponsor .logos_alcaldias a {
+	margin: 0 10%;
 }
 
 .sponsor .logos_alcaldias img {
 	width: 120px;
 	display: inline-block;
 	margin: 0;
-	margin: 0 20px;
 	opacity: 0.5;
 }
 
