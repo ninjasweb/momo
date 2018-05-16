@@ -76,3 +76,44 @@
 .dia .dia_desactivado p {
 	color: #dcdadb;
 }
+
+/* Municipios Calendario */
+
+.municipios_calendario {
+	width: 80%;
+	height: 100%;
+	margin: auto;
+	background-color: #ccc;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.municipio_calendario {
+	width: 100%;
+	height: 300px;
+	text-align: center;
+}
+
+.municipio_calendario h2 {
+	margin-top: 30%;
+	color: #fff;
+}
+
+ .ataco_calendario {
+ 	background-color: #F7921E;
+	background-image: url("img/mapa.jpg");
+	background-position: right;
+}
+
+.chaparral_calendario {
+	background-color: #016737;
+}
+
+.planadas_calendario {
+	background-color: #F05924;
+}
+
+.rioblanco_calendario {
+	background-color: #01AEF2;
+	opacity: 1;
+}
