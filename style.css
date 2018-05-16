@@ -284,7 +284,9 @@ img {
 .mapa .destinos:hover {
 	background: #f15924;
 	color: #fff;
+	transform: translateX(0.5rem);
 	transition: all .3s ease;
+
 }
 
 @media only screen and (min-width: 1250px){ 
