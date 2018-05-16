@@ -1,0 +1,78 @@
+/* CALENDARIO */
+
+.mes {
+	height: 100%;
+	text-align: center;
+	justify-content: center;
+}
+
+.mes .titulo_mes h2 {
+	font-size: 80px;
+}
+
+.mes .semanas {
+
+	width: 95%;
+	height: 100%;
+	background: #7db2a0;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.mes .semanas .dia {
+
+	width: 95%;
+	height: 95%;
+	background-color: #fff;
+	margin: auto;
+	padding: 8px 5px 8px 5px;
+}
+
+.mes .dias {
+	width: 95%;
+	text-align: center;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	background-color: #006a44;
+	margin-bottom: 20px;
+}
+
+.mes .dias h2 {
+	display: inline-block;
+	color: #fff;
+	font-size: 60px;
+	text-transform: lowercase;
+}
+
+.dia .numero_dia p {
+	color: orange;
+	text-align: left;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 0;
+	margin-top: 0;
+	left: 0;
+}
+
+.dia .evento .nombre_evento p {
+	font-size: 12px;
+}
+
+.dia .evento .lugar_evento p {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.dia .evento .hora_evento p {
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+.dia .dia_desactivado p {
+	color: #dcdadb;
+}
