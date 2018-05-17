@@ -83,9 +83,10 @@
 	width: 80%;
 	height: 100%;
 	margin: auto;
-	background-color: #ccc;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	background-color: #ccc;
+
 }
 
 .municipio_calendario {
@@ -97,12 +98,11 @@
 .municipio_calendario h2 {
 	margin-top: 30%;
 	color: #fff;
+	text-transform: uppercase;
 }
 
  .ataco_calendario {
  	background-color: #F7921E;
-	background-image: url("img/mapa.jpg");
-	background-position: right;
 }
 
 .chaparral_calendario {
@@ -117,3 +117,9 @@
 	background-color: #01AEF2;
 	opacity: 1;
 }
+
+.ataco_calendario:hover {
+	background-color: rgba(247, 146, 30, .8);
+	cursor: pointer;
+}
+
