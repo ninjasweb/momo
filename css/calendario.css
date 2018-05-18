@@ -79,6 +79,11 @@
 
 /* Municipios Calendario */
 
+.titulo_calendario p {
+	font-size: 20px;
+	margin-top: -30px;
+}
+
 .municipios_calendario {
 	width: 80%;
 	height: 100%;
@@ -86,6 +91,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	background-color: #ccc;
+	position: relative;
 }
 
 .municipio_calendario {
@@ -95,24 +101,29 @@
 	z-index: 888;
 	text-align: center;
 	overflow: hidden;
+	position: relative;
+	text-align: center;
 }
 
 .municipio_calendario h2 {
-	margin-top: 30%;
+	top: 30%;
+	left: 0;
+	right: 0;
 	color: #fff;
 	text-transform: uppercase;
+	position: absolute;
+	z-index: 10;
+	align-self: center;
 }
 
 .municipio_calendario img {
 	width: 100%;
 	height: 100%;
 	background-position: center;
-	opacity: 0.2;
-	/*z-index: -1;
-	position: relative; */
+	opacity: 0.05;
 }
 
-.municipio_calendario h2:hover + .municipio_calendario img {
+.municipio_calendario img:hover {
 	opacity: 0.3;
 }
 
@@ -134,8 +145,10 @@
 	opacity: 1;
 }
 
-.ataco_calendario:hover {
+/* .ataco_calendario:hover {
 	background-color: rgba(247, 146, 30, .8);
 	cursor: pointer;
-}
+} */
+
+
 
