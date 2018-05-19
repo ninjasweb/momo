@@ -247,9 +247,10 @@ img {
 
 
 
+
 .servicios img {
 
-	width: 100px;
+	width: 35%;
 }
 
 .servicios img:hover {
@@ -257,7 +258,13 @@ img {
     animation: swing 1s;
 }
 .servicios p {
-	font-size: 22px;
+	font-size: 12px;
+}
+
+@media only screen and (min-width: 500px){ 
+	.servicios p {
+	font-size: 18px;
+}
 }
 
 
