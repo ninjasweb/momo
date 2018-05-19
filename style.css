@@ -529,8 +529,9 @@ img {
 	text-align: center;
 	display: grid;
 	grid-template-columns: 1fr;
-	padding: 0 150px;
+	padding: 0 3rem;
 }
+
 
 @media only screen and (min-width: 500px){
 	.sponsor .logos_alcaldias {
@@ -548,11 +549,13 @@ img {
 }
 
 .sponsor .logos_alcaldias a {
-	margin: 0 10%;
+	margin: 10% 10%;
+	min-width: 50px;
 }
 
-.sponsor .logos_alcaldias img {
-	width: 120px;
+.sponsor .logos_alcaldias a img {
+	/*min-width: : 220px;*/
+	width: 100px;
 	display: inline-block;
 	margin: 0;
 	opacity: 0.5;
