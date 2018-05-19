@@ -698,8 +698,8 @@ footer .aviso_legal p {
 }
 .navigation__button {
   background-color: #fff;
-  height: 4rem;
-  width: 4rem;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 50%;
   position: fixed;
   top: 3rem;
@@ -710,8 +710,8 @@ footer .aviso_legal p {
   cursor: pointer;
 }
 .navigation__background {
-  height: 3rem;
-  width: 3rem;
+  height: 1.5rem;
+  width: 1.5rem;
   border-radius: 50%;
   position: fixed;
   top: 3.5rem;
@@ -729,6 +729,17 @@ footer .aviso_legal p {
   opacity: 0;
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+	/* Responsive del Nav bar */
+@media only screen and (min-width: 500px){
+	.navigation__button {  height: 4rem;
+  width: 4rem; }
+	.navigation__background { height: 3rem;
+  width: 3rem; }
+	.navigation__nav { height: 50vh;
+  position: fixed;  }
+
+
 }
 .navigation__list1 {
   list-style: none;
@@ -786,14 +797,33 @@ footer .aviso_legal p {
 
 .navigation__icon {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-  width: 2rem;
-  height: 2.5px;
+  width: 1rem;
+  height: 2px;
   background-color: orange;
   display: inline-block;
 }
+
+@media only screen and (min-width: 500px){ 
+	.navigation__icon {  margin-top: 2rem; }
+
+	.navigation__icon {
+	  width: 2rem;
+	  height: 2.5px; 
+	}
+	.navigation__icon::before {
+		width: 2rem;
+	  height: 2.5px; 
+	}
+
+	.navigation__icon::after {
+		width: 2rem;
+	  height: 2.5px;
+	}
+
+} 
 .navigation__icon::before, .navigation__icon::after {
   content: "";
   position: absolute;
@@ -823,6 +853,8 @@ footer .aviso_legal p {
   transform: rotate(-135deg);
   bottom: 0;
 }
+
+
 
 
 
