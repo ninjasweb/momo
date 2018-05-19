@@ -408,6 +408,7 @@ img {
 }
 
 .fanpage {
+	width: 80%;
 	justify-content: center;
 	justify-self: center;
 	text-align: center;
@@ -452,6 +453,23 @@ img {
 	bottom: 0;
 	right: 0;
 }
+
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+    width: 100% !important;
+    margin: 0;
+}
+
+.fb_plug {
+	align-items: center;
+	text-align: center;
+	width: 100%;
+}
+
+#u_0_5 {
+	display: none;
+} 
+
+
 
 /* Sponsors*/
 
