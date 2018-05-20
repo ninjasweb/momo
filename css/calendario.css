@@ -33,7 +33,7 @@
 	height: 95%;
 	background-color: #fff;
 	margin: auto;
-	padding: 8px 5px 8px 5px;
+	padding: 6px 5px 6px 5px;
 }
 
 .mes .dias {
@@ -43,40 +43,74 @@
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
 	background-color: #006a44;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .mes .dias h2 {
 	display: inline-block;
 	color: #fff;
-	font-size: 60px;
+	font-size: 30px;
 	text-transform: lowercase;
+}
+
+@media only screen and (min-width: 500px){ 
+	.mes .dias h2 {
+	font-size: 60px;
+
+}
 }
 
 .dia .numero_dia p {
 	color: orange;
 	text-align: left;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 15px;
 	margin-bottom: 0;
 	margin-top: 0;
 	left: 0;
 }
 
 .dia .evento .nombre_evento p {
+	font-size: 8px;
+}
+
+
+.dia .evento .lugar_evento p {
+	font-size: 7px;
+	font-weight: bold;
+}
+
+.dia .evento .hora_evento p {
+	font-size: 8px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/*Responsive Eventos */
+
+@media only screen and (min-width: 500px){ 
+	.dia .evento .nombre_evento p {
 	font-size: 12px;
 }
 
 .dia .evento .lugar_evento p {
 	font-size: 10px;
-	font-weight: bold;
+
 }
 
 .dia .evento .hora_evento p {
 	font-size: 10px;
-	text-transform: uppercase;
-	font-weight: bold;
+
 }
+
+.dia .numero_dia p {
+	font-size: 20px;
+
+}
+
+}
+/* fin responsive eventos*/
+
 
 
 .dia .dia_desactivado p {
