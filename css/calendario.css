@@ -7,7 +7,15 @@
 }
 
 .mes .titulo_mes h2 {
+	font-size: 40px;
+	margin-bottom: -5px;
+}
+
+@media only screen and (min-width: 500px){
+	.mes .titulo_mes h2 {
 	font-size: 80px;
+}
+
 }
 
 .mes .semanas {
@@ -25,6 +33,7 @@
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
 	grid-template-rows: repeat(6, auto);
+	margin-bottom: 50px;
 }
 
 .mes .semanas .dia {
@@ -33,6 +42,9 @@
 	height: 95%;
 	background-color: #fff;
 	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	padding-bottom: 2px;
 	/*padding: 6px 5px 6px 5px;*/
 }
 
@@ -194,6 +206,28 @@
 	background-color: rgba(247, 146, 30, .8);
 	cursor: pointer;
 } */
+
+
+/* CALENDARIO DE CADA MUNICIPIO*/
+
+.paginacion {
+	width: 100%;
+	text-align: center;
+}
+
+.titulo_calendario h2 {
+	font-size: 30px;
+}
+
+@media only screen and (min-width: 500px){
+	 .titulo_calendario h2 {
+	font-size: 40px;
+}
+
+}
+
+
+
 
 
 
