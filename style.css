@@ -764,7 +764,7 @@ footer .aviso_legal p {
 }
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-family: 'CoveredByYourGrace'; 
   font-weight: 300;
   padding: 1rem 2rem;
@@ -775,6 +775,15 @@ footer .aviso_legal p {
   background-size: 230%;
   transition: all 0.4s;
 }
+
+@media only screen and (min-width: 500px){ 
+	.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 2rem; 
+}
+
+}
+
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
   color: black;
@@ -802,7 +811,7 @@ footer .aviso_legal p {
   margin-top: 1rem;
 }
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-  width: 1rem;
+  width: 1.2rem;
   height: 2px;
   background-color: orange;
   display: inline-block;
