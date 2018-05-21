@@ -1,3 +1,18 @@
+/*
+Theme Name: Momo Web
+Theme URI: https://momotecuenta.org
+Author: NinjasWeb
+Author URI: https://ninjasweb.com/
+Description: Momo es un chat conversacional para la plataforma de Facebook Messenger que busca promover la interacción entre jóvenes y comunidad en general para acceder a información sobre la gestión pública, hacer seguimiento a los Planes de Desarrollo Municipal y mejorar el acceso a los servicios públicos en los municipios de Ataco, Chaparral, Planadas y Rioblanco.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Momoweb
+Tags: Momo Te cuenta, Contando Mi Pueblo
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
 /* RESET*/
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
