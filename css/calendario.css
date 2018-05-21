@@ -63,6 +63,7 @@
 	color: #fff;
 	font-size: 30px;
 	text-transform: lowercase;
+	margin: 5px 0px;
 }
 
 @media only screen and (min-width: 500px){ 
