@@ -387,10 +387,12 @@ img {
 	padding: 0;
 }
  .ruta p {
-	font-size: 18px;
+	font-size: 14px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
+
+
 
 
 .rutas_grid {
@@ -645,13 +647,20 @@ footer .aviso_legal p {
 
 @media only screen and (min-width: 1250px){
 	.ruta p {
-	font-size: 25px;
+	font-size: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
 
  }
+
+ @media only screen and (min-width: 800px){
+	.ruta p {
+	font-size: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
 
 @media only screen and (min-width: 1000px){
 	.ruta h2 {
@@ -662,12 +671,7 @@ footer .aviso_legal p {
 }
 }
 
-@media only screen and (min-width: 800px){
-	.ruta p {
-	font-size: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
+
 
 
 
