@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Momo te Cuenta - Calendario de Eventos</title>
+	<title>Momo te Cuenta</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/calendario.css">
@@ -21,9 +21,23 @@
 	<!-- Fin Analytics -->
 </head>
 <body>
-	
+	<!-- SDK Facebook -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.0&appId=1742279932700943&autoLogAppEvents=1';
+ 		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script> 
+<!-- Fin SDK Facebook -->
+
+
+
 	<!-- Contenedor -->
 	<div class="container">
+
 		<!-- Menu Nav Bar -->
 		<div class="navigation">
   			<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
@@ -49,36 +63,65 @@
 
 		<!-- main -->
 		<main class="main">
-			<div class="titulo_calendario texto_centrado">
-				<h2>CALENDARIO DE EVENTOS</h2>
-				<p>Escoge el Municipio y explora los eventos más importantes de cada uno.</p>
-			</div>
-		</main><!-- Fin Main -->
+		</main>
 
-		<!-- Municipios Calendario -->
-			<div class="municipios_calendario">
-			<a href="ataco"><div class="municipio_calendario ataco_calendario">
-				<img src="img/ataco_parque.jpg" alt="Parque Ataco" title="Ataco (Tolima)">
-				<h2>Ataco</h2>
-			</div></a>
-				<a href="chaparral"><div class="municipio_calendario chaparral_calendario">
-					<h2>Chaparral</h2>
-					<img src="img/chaparral_parque.jpg" alt="Chaparral" title="Chaparral (Tolima)">
-				</div></a>
-				<a href="planadas"><div class="municipio_calendario planadas_calendario">
-					<img src="img/planadas_parque.jpg" alt="planadas" title="Planadas (Tolima)">
-					<h2>Planadas</h2>
-				</div></a>
-				<a href="rioblanco"><div class="municipio_calendario rioblanco_calendario">
-					<img src="img/rioblanco_parque.jpg" alt="rioblanco" title="Rioblanco (Tolima)">
-					<h2>Rioblanco</h2>
-				</div></a>
-			</div>
-		<!-- Fin Municipios Calendario -->
 
-				
-		
-		<!-- footer -->
+		<!-- Rutas -->
+		<div class="rutas">
+			<h2 class="animacion_pulse">PALABRAS CLAVE</h2>
+
+			<div class="rutas_grid">
+
+			<div class="rutas_momo">
+				<div class="ruta">
+					<h2>" Hola Momo "</h2>
+					<p>Inicia la conversación con Momo. ¡Saluda a Momo y empieza la aventura!</p>
+				</div>
+			</div>
+
+			<div class="rutas_momo">
+				<div class="ruta">
+					<h2>" Eventos Momo "</h2>
+					<p>Descubre los principales eventos que ocurren en los cuatro municipios del sur del Tolima. Entérate qué está sucediendo en nuestro territorio</p>
+				</div>
+			</div>
+
+			<div class="rutas_momo">
+				<div class="ruta">
+					<h2>" Aprende con Momo "</h2>
+					<p>Momo te hará un pequeño quiz para saber que tan claros tienes los conceptos sobre gobierno abierto, Planes de Desarrollo Municipal y Gobernabilidad</p>
+				</div>
+			</div>
+
+			<div class="rutas_momo">
+				<div class="ruta">
+					<h2>" Navega con Momo "</h2>
+					<p>Oferta en Línea: Páginas Webs Oficiales y links de trámites.</p>
+				</div>
+			</div>
+
+			</div>
+
+		</div><!-- Fin Rutas -->
+
+
+		<!-- Sponsors -->
+		<div class="sponsor">
+			<p>Esta iniciativa se hace en el marco del proyecto <span style="color: #f15924">Contando Mi Pueblo</span>, gracias al apoyo del pueblo de los Estados Unidos financiado a través de su Agencia para el Desarrollo Internacional (USAID). Los Contenidos y Producción a cargo de <a href="">Ftz Studio</a>.</p>
+			<div class="logos">
+				<a href="http://www.ftzstudio.com" target="_blank" class="ftz" title="FTZ Studio"><img src="img/ftz.png" alt="Ftz Studio"></a>
+				<img src="img/usaid.png" alt="USAID" title="USAID">
+			</div>
+			<div class="logos_alcaldias">
+				<a href="http://www.chaparral-tolima.gov.co/" target="_blank"><img src="img/chaparral.svg" alt="Alcaldía de Chaparral" title="Alcaldía del Municipio de Chaparral"></a>
+				<a href="http://www.ataco-tolima.gov.co/" target="_blank"><img src="img/ataco.jpg" alt="Ataco" title="Alcaldía de Ataco"></a>
+				<a href="http://www.planadas-tolima.gov.co/" target="_blank"><img src="img/planadas.png" alt="Planadas" title="Alcaldía de Planadas"></a>
+				<a href="http://www.rioblanco-tolima.gov.co/" target="_blank"><img src="img/rioblanco.png" alt="Rioblanco" title="Alcaldía de Rioblanco"></a>
+			</div>
+		</div><!-- Fin Sponsors -->
+
+
+		<!-- Footer -->
 		<footer>
 			<div class="logos_footer">
 				<a href="https://www.facebook.com/holasoymomo/" target="_blank"><img src="img/facebook.png" alt="Síguenos en Facebook"></a>
@@ -99,6 +142,5 @@
             }(); botsify.load('fG8gBGvzkqKkiSo8tHWv5IxxTk8UZKoNQd5YLKWd');
             </script>
 	<!-- Fin ChatWeb -->
-	<!--Test PC -->
 </body>
 </html>
