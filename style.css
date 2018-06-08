@@ -328,6 +328,7 @@ img {
 
 }
 
+
 @media only screen and (min-width: 1250px){ 
 	.mapa .destinos {
 	background: #006837;
@@ -339,12 +340,12 @@ img {
 
  }
 
-.destinos-mapa .destiny img {
+.destinos-mapa .destiny svg {
 	display: none;
 }
 
 @media only screen and (min-width: 1000px){ 
-	.destinos-mapa .destiny img {
+	.destinos-mapa .destiny svg {
 	display: block;
 
  }
