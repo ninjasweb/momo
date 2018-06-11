@@ -329,6 +329,7 @@ img {
 }
 
 
+
 @media only screen and (min-width: 1250px){ 
 	.mapa .destinos {
 	background: #006837;
@@ -350,6 +351,30 @@ img {
 
  }
 }
+
+/* COLORES DE LOS PUNTOS DEL MAPA */
+
+.destinos-mapa .destiny svg #planadas_punto {
+	fill: #fff;
+
+}
+
+.destinos-mapa .destiny svg #rioblanco_punto {
+	fill: #fff;
+
+}
+
+.destinos-mapa .destiny svg #ataco_punto {
+	fill: #fff;
+
+}
+
+
+.destinos-mapa .destiny svg #chaparral_punto {
+	fill: #fff;
+
+}
+
 
 
 
@@ -426,6 +451,7 @@ img {
 }
 
 .rutas_momo {
+
 }
 
 /* Likes Momo*/
