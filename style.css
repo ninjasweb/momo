@@ -92,6 +92,10 @@ img {
 	height: auto;
 }
 
+svg {
+	max-width: 100%;
+}
+
 .animacion_pulse:hover {
 	-webkit-animation: pulse 2s;
     animation: pulse 2s;
