@@ -92,6 +92,10 @@ img {
 	height: auto;
 }
 
+svg {
+	max-width: 100%;
+}
+
 .animacion_pulse:hover {
 	-webkit-animation: pulse 2s;
     animation: pulse 2s;
@@ -328,6 +332,8 @@ img {
 
 }
 
+
+
 @media only screen and (min-width: 1250px){ 
 	.mapa .destinos {
 	background: #006837;
@@ -339,16 +345,41 @@ img {
 
  }
 
-.destinos-mapa .destiny img {
+.destinos-mapa .destiny svg {
 	display: none;
 }
 
 @media only screen and (min-width: 1000px){ 
-	.destinos-mapa .destiny img {
+	.destinos-mapa .destiny svg {
 	display: block;
 
  }
 }
+
+/* COLORES DE LOS PUNTOS DEL MAPA */
+
+.destinos-mapa .destiny svg #planadas_punto {
+	fill: #fff;
+
+}
+
+.destinos-mapa .destiny svg #rioblanco_punto {
+	fill: #fff;
+
+}
+
+.destinos-mapa .destiny svg #ataco_punto {
+	fill: #fff;
+
+}
+
+
+.destinos-mapa .destiny svg #chaparral_punto {
+	fill: #fff;
+
+}
+
+
 
 
 
@@ -425,6 +456,7 @@ img {
 }
 
 .rutas_momo {
+
 }
 
 /* Likes Momo*/
